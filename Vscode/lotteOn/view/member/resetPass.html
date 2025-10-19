@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/lotteOn/css/member/resetPass.css" />
+    <script src="/lotteOn/js/member/resetPass.js"></script>
+    <title>비밀번호 초기화 폼</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="/lotteOn/images/logo.png" />
+        <h2>아이디/비밀번호 찾기</h2>
+      </header>
+      <section>
+        <div>
+          <span class="result-title">비밀번호 재설정</span>
+          <span class="result-desc">새로운 비밀번호를 설정해 주세요</span>
+        </div>
+
+        <form action="#" method="post">
+          <div class="password-box">
+            <label for="new-password">새 비밀번호</label>
+            <div class="input-wrap">
+              <input
+                type="password"
+                id="new-password"
+                name="newPassword"
+                placeholder="새 비밀번호를 입력해 주세요."
+              />
+              <button type="button" class="eye-btn">👀</button>
+            </div>
+            <span class="error-msg" id="pwd-error"></span>
+            <!-- 경고 메시지 표시 -->
+
+            <label for="confirm-password">새 비밀번호 확인</label>
+            <div class="input-wrap">
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirmPassword"
+                placeholder="새 비밀번호를 다시 입력해 주세요."
+              />
+              <button type="button" class="eye-btn">👀</button>
+            </div>
+          </div>
+          <span class="error-msg" id="confirm-error"></span>
+          <!-- 경고 메시지 표시 -->
+
+          <div class="btn-box">
+            <button type="submit" class="btn-reset">비밀번호 재설정</button>
+            <button
+              type="button"
+              class="btn-login"
+              onclick="location.href='/member/login'"
+            >
+              로그인 하기
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
